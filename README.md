@@ -1,6 +1,3 @@
-# ToDoist
- To do using django
-
 <!-- BANNER -->
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django?logo=python)
 ![PyPI](https://img.shields.io/pypi/v/django?label=Django&logo=django&logoColor=green)
