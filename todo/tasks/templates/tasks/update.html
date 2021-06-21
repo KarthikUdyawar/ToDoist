@@ -1,0 +1,20 @@
+{% extends 'tasks/base.html' %}
+
+{% block title %}Update - To Do{% endblock title %}
+
+{% block header %}<h6>Update Task</h6>{% endblock header %}
+
+{% block content %}
+<form method='POST' action=''>
+
+    {% csrf_token %}
+    {{form.title}}
+    <div class="d-grid gap-2 col-12 mx-auto">
+        {{form.complete}}
+        <label class="btn btn-outline-info" for="btn-check-outlined">Complete</label>
+    </div>
+
+    <input type='submit' name='Update Task' class="btn btn-primary">
+</form>
+
+{% endblock content %}

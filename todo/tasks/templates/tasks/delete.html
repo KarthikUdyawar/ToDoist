@@ -1,0 +1,20 @@
+{% extends 'tasks/base.html' %}
+
+{% block title %}Delete - To Do{% endblock title %}
+
+{% block header %}<h6>Delete Task</h6>{% endblock header %}
+
+{% block content %}
+
+<h3>Are you sure you want to delete it?<br> "{{item}}" </h3>
+
+<div class="d-grid gap-2 col-12 mx-auto">
+    <a class="btn btn-sm btn-info" href="{% url 'list' %}">Cancel</a>
+</div>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type='submit' name='Confirm' class="btn btn-danger">
+</form>
+
+{% endblock content %}
