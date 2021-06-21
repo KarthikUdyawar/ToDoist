@@ -5,19 +5,19 @@
 --prussian-blue: #023047ff;
 --honey-yellow: #ffb703ff;
 --orange: #fb8500ff;
---white: #bdf5ffb0;
+--white: #ffffffc7;
 }
 
 html{
     --bg: var(--light-cornflower-blue);
-    --sec_bg: #fff;
+    --sec_bg: var(--prussian-blue);
     --color: #000;
     --hover_color: #e7e7e7;
 }
 
 body[theme="dark"]{
     --bg: var(--prussian-blue);
-    --sec_bg: #222222;
+    --sec_bg: var(--light-cornflower-blue);
     --color: #fff;
     --hover_color: #424242;
 }
@@ -26,7 +26,6 @@ body{
     background-color: var(--bg);
     overflow-x: hidden;
 }
-
 
 input{
     width: 100%;
@@ -146,10 +145,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px var(--prussian-blue);
+    box-shadow: inset 0 0 6px var(--sec_bg);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--prussian-blue);
+    background-color: var(--sec_bg);
     outline: 1px solid var(--blue-green);
 }
