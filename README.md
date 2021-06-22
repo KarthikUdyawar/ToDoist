@@ -110,7 +110,29 @@ Make sour app have the latest version of python & pip installed.
     ```powershell
     python manage.py runserver
     ```
-8. The project will be available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+8. For Docker server:
+
+    1. Build docker server
+        ```powershell
+        cd ..
+        docker build . -t todoist
+        ```
+    2. Run docker server
+        ```powershell
+        docker run -d -p 8000:8000 todoist
+        ```
+    3. Stop docker server
+        ```powershell
+        docker ps
+        ```
+        Select NAME where image = todolist
+
+        ```powershell
+         docker stop NAME
+        ```
+
+8. The project will be available at [localhost](http://127.0.0.1:8000/)
 
 <!-- ROADMAP -->
 ## Roadmap
